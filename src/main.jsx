@@ -8,10 +8,12 @@ import { Order } from './components/Orders/Order'
 import { Inventory } from './components/Inventory/Inventory'
 import { Login } from './components/Login/Login'
 import cartProductLoader from './CustomLoader/cartProductLoader'
+import { Error } from './components/Error/Error'
 const router=createBrowserRouter([
   {
 path:'/',
 element:<App/>,
+errorElement:<Error/>,
 children:[
   {
     path:'/',
